@@ -5,12 +5,14 @@ import './index.css'
 import HeaderComponent from "./components/Header";
 import FooterComponent from "./components/Footer";
 import MainFlow from "./components/MainFlow";
+import AppTodoList from "./components/day2-todo-list/AppToDoList";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         {/*<App/>*/}
-        <HeaderComponent />
+        {/* <HeaderComponent />
         <MainFlow />
-        <FooterComponent />
+        <FooterComponent /> */}
+        <AppTodoList></AppTodoList>
     </StrictMode>,
 )

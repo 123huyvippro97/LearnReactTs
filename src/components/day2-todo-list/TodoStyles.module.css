@@ -1,0 +1,64 @@
+/* TodoStyles.module.css */
+.todoForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todoForm input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .todoForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .todoForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  .todoList {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todoItem.completed span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .todoItem button {
+    border: none;
+    background: none;
+    color: #ff0000;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .todoItem button:hover {
+    text-decoration: underline;
+  }

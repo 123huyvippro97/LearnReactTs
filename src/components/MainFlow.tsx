@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Day1 from "./day1/Day1";
 
 // Định nghĩa kiểu dữ liệu cho phản hồi API
 interface ApiDataItem {
@@ -48,8 +49,27 @@ const MainFlow = () => {
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error}</p>;
+    const test2 = [
+        {
+            "name" : "huy1",
+            "age" : 27
+        },{
+            "name" : "huy1",
+            "age" : 28
+        },{
+            "name" : "huy1",
+            "age" : 29
+        },
+    ]
+    const test3 = test2.map((item1, index) => (
+        <Day1 data = {item1}></Day1>
+    ));
 
     return <main className="px-4 py-12">
+
+        {test2.map((item1, index) => (
+            <Day1  data = {data}></Day1>
+        ))}
         <div className="container xl:w-[1100px] mx-auto">
             <div className="items flex-wrap md:flex gap-4 space-y-6 md:space-y-0" id="product_items">
             {data.map((item, index) => (
