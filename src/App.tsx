@@ -9,6 +9,7 @@ const App = () => {
   return (
     <>
       <div>
+          <h1 className="text-red">ádfasdf</h1>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
